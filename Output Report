@@ -1,0 +1,91 @@
+
+FINANCIAL INCLUSION GAP ANALYSIS
+Financial Inclusion Gap Analysis — US Unbanked and Underbanked Households
+Generated: September 19, 2026
+Source: FDIC 2023 National Survey of Unbanked and Underbanked Households
+
+================================================================
+EXECUTIVE SUMMARY
+================================================================
+
+The 2023 FDIC National Survey of Unbanked and Underbanked Households
+reveals a persistent and significant gap in US financial inclusion.
+Approximately 24.6 million US households — representing more than
+one in five Americans — are either fully excluded from the banking
+system or forced to rely on nonbank financial services for core
+financial needs.
+
+KEY FINDINGS
+------------
+
+National Scope:
+  - 5.6 million households (4.2%) are completely unbanked
+  - 19.0 million households (14.2%) are underbanked
+  - Combined: 24.6 million households lack full banking access
+
+Income Disparity:
+  - Households earning under $15,000 are 35 times more likely
+    to be unbanked than households earning over $75,000
+  - The unbanked rate for lowest-income households is 14.1%
+    compared to just 0.4% for highest-income households
+
+Onboarding as a Direct Barrier:
+  - 12.7% of unbanked households cite the account opening
+    process as "too difficult" as a reason for being unbanked
+  - 9.6% cite ID documentation requirements specifically
+  - These are barriers that better-designed onboarding systems
+    can directly address
+
+CDFI Institution Scale:
+  - 362 credit unions carry the CDFI designation (Callahan 2025)
+  - These institutions serve 18.3 million members across 44 states
+  - They represent 12.6% of total US credit union membership
+  - They are among the least resourced to build modern onboarding
+
+================================================================
+IMPLICATIONS FOR THE KYC API FRAMEWORK
+================================================================
+
+The data above shows that onboarding friction is not a minor
+inconvenience. It is a documented barrier that keeps millions
+of American households outside the financial system.
+
+The KYC API Framework for Financial Inclusion (published at
+github.com/sujiyer/kyc-api-framework) directly addresses the
+onboarding-related barriers identified in this analysis by:
+
+1. Parallel verification architecture — reducing time-to-decision
+   from days to minutes, preventing abandonment from wait times
+
+2. Progressive verification pathways — offering alternative
+   identity paths for thin-file applicants who cannot pass
+   standard verification, rather than denying them outright
+
+3. CFPB Section 1033 integration — using consumer-permissioned
+   data from existing accounts as an alternative identity signal
+
+4. Plain-language explanation APIs — explaining each step of
+   the process to applicants who are unfamiliar with banking
+
+The goal is not just faster onboarding. It is onboarding that
+works for the 24.6 million households currently left outside.
+
+================================================================
+DATA SOURCES
+================================================================
+
+FDIC 2023 National Survey of Unbanked and Underbanked Households
+https://www.fdic.gov/household-survey
+
+Callahan and Associates CDFI Credit Union Data (December 2025)
+As cited in NIW Proposed Endeavor Affidavit, 2026
+
+================================================================
+ABOUT THIS TOOL
+================================================================
+
+This analyzer is part of the Financial Inclusion Data Tools
+published at github.com/sujiyer/financial-inclusion-analyzer
+
+Author: Sujatha  Iyer
+Published independently and outside of employment.
